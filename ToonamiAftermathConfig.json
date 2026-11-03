@@ -1,0 +1,61 @@
+{
+  "name": "Toonami Aftermath",
+  "description": "Watch the Toonami Aftermath live channels (East, West, Movies, Radio, Snickelodeon, MTV97). Each channel shows up as its own creator with a live stream and a now-playing title.",
+  "author": "Community",
+  "authorUrl": "https://www.toonamiaftermath.com/",
+  "platformUrl": "https://www.toonamiaftermath.com/",
+  "sourceUrl": "https://YOUR-HOST/ToonamiAftermathConfig.json",
+  "repositoryUrl": "https://github.com/YOUR-USER/grayjay-source-toonami-aftermath",
+  "scriptUrl": "./ToonamiAftermathScript.js",
+  "version": 1,
+  "iconUrl": "./icon.png",
+  "id": "ffe7f4ac-0b38-4358-8a0b-dcc0afd16b62",
+
+  "scriptSignature": "",
+  "scriptPublicKey": "",
+
+  "packages": ["Http"],
+  "allowEval": false,
+  "allowUrls": [
+    "toonamiaftermath.com",
+    "www.toonamiaftermath.com",
+    "api.toonamiaftermath.com",
+    "asp1.toonamiaftermath.com",
+    "asp2.toonamiaftermath.com",
+    "asp3.toonamiaftermath.com",
+    "asp4.toonamiaftermath.com",
+    "asp5.toonamiaftermath.com",
+    "asp6.toonamiaftermath.com"
+  ],
+
+  "settings": [
+    {
+      "variable": "streamBase",
+      "name": "Stream base URL",
+      "description": "Where the channel playlists live: <base>/<channel>/playlist.m3u8. Change this only if the site moves its streams.",
+      "type": "string",
+      "default": "http://api.toonamiaftermath.com:3000"
+    },
+    {
+      "variable": "apiBase",
+      "name": "Schedule API base URL",
+      "description": "Used only to show the current show/episode in the title.",
+      "type": "string",
+      "default": "https://api.toonamiaftermath.com"
+    },
+    {
+      "variable": "showNowPlaying",
+      "name": "Show now-playing titles",
+      "description": "Fetch the schedule so the title shows the current show. If off, titles are just the channel name.",
+      "type": "boolean",
+      "default": "true"
+    },
+    {
+      "variable": "westShiftHours",
+      "name": "West schedule shift (hours)",
+      "description": "Added to schedule times reported for the West/PST channels. Leave at 0 unless the now-playing title looks hours off.",
+      "type": "string",
+      "default": "0"
+    }
+  ]
+}
