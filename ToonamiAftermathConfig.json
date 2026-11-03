@@ -1,0 +1,30 @@
+{
+  "name": "Toonami Aftermath",
+  "description": "Watch the Toonami Aftermath live channels (East, West, Movies, Radio, Snickelodeon, MTV97). Each channel shows up as its own creator with a live stream and a now-playing title.",
+  "author": "Community",
+  "authorUrl": "https://www.toonamiaftermath.com/",
+  "platformUrl": "https://www.toonamiaftermath.com/",
+  "sourceUrl": "https://raw.githubusercontent.com/newyearstudios/GrayJayToonami/main/ToonamiAftermathConfig.json",
+  "repositoryUrl": "https://github.com/newyearstudios/GrayJayToonami",
+  "scriptUrl": "./ToonamiAftermathScript.js",
+  "version": 1,
+  "iconUrl": "./icon.png",
+  "id": "ffe7f4ac-0b38-4358-8a0b-dcc0afd16b62",
+  "scriptSignature": "",
+  "scriptPublicKey": "",
+  "packages": [
+    "Http"
+  ],
+  "allowEval": false,
+  "allowUrls": [
+    "toonamiaftermath.com",
+    "www.toonamiaftermath.com",
+    "api.toonamiaftermath.com",
+    "asp1.toonamiaftermath.com",
+    "asp2.toonamiaftermath.com",
+    "asp3.toonamiaftermath.com",
+    "asp4.toonamiaftermath.com",
+    "asp5.toonamiaftermath.com",
+    "asp6.toonamiaftermath.com"
+  ]
+}
